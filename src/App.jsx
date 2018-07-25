@@ -9,6 +9,10 @@ class App extends Component {
         }
     }
 
+    changeDeadline(){
+        this.setState({deadline: 'November 25, 2017'})
+    }
+
     render( ) {//have to include the return statment
         return (
             <div className="App">
@@ -22,7 +26,9 @@ class App extends Component {
                     <div className="Clock-seconds">20 Seconds</div>
                 </div>
                 <input placeholder='new date' />
-                <button>Submit</button>
+                <button onClick={() => this.changeDeadline()}>
+                    Submit
+                </button>
             </div>
         )
     }
