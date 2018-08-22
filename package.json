@@ -1,6 +1,9 @@
 {
   "name": "countdownchamp",
   "version": "0.1.0",
+  "engine": {
+      "node": "8.11.3"
+  },
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
